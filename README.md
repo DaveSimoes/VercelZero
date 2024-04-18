@@ -65,14 +65,18 @@ npm run dev
 
 This will start the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Key Features
+## Key Features
 
-. Fast Deployment: Similar to Vercel's V0, this clone supports a fast deployment experience, where you can deploy applications and websites with just a few clicks.
-. Git Integration: You can connect this clone to your Git repository to further streamline the continuous deployment process.
-. Production and Development Environments: This clone supports configuring production and development environments, allowing you to test your application before deploying it to production.
-. Logs and Monitoring: Like Vercel's V0, you can view logs and monitor your application's performance directly within this interface.
+#### Fast Deployment: 
+- Similar to Vercel's V0, this clone supports a fast deployment experience, where you can deploy applications and websites with just a few clicks.
+#### Git Integration: 
+- You can connect this clone to your Git repository to further streamline the continuous deployment process.
+#### Production and Development Environments:
+- This clone supports configuring production and development environments, allowing you to test your application before deploying it to production.
+#### Logs and Monitoring:
+- Like Vercel's V0, you can view logs and monitor your application's performance directly within this interface.
 
-### License
+## License
 
 This project is licensed under the MIT License.
 
