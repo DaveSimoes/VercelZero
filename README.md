@@ -2,7 +2,7 @@
 
 This project is an attempt to replicate the core functionalities and development experience provided by Vercel's V0 platform.
 
-### About Vercel's V0 platform
+## About Vercel's V0 platform
 
  V0 is a generative user interface system by Vercel powered by AI. It generates copy-and-paste friendly React code based on shadcn/ui and Tailwind CSS that people can use in their projects.
  [V0 Vercel Official Documentation](https://v0.dev/docs)
