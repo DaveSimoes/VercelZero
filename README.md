@@ -22,7 +22,7 @@ To get started with this V0 Vercel clone, follow these simple steps:
 1.Clone the repository: Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/clone-v0-vercel.git
+git clone https://github.com/DaveSimoes/clone-v0-vercel.git
 ```
 
 ### Install dependencies
