@@ -76,10 +76,6 @@ This will start the application in development mode. Open [http://localhost:3000
 #### Logs and Monitoring:
 - Like Vercel's V0, you can view logs and monitor your application's performance directly within this interface.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contribution
 
 Contributions are welcome! If you find a bug, have an idea for a new feature, or want to improve something in the code, feel free to open an issue or submit a pull request.
