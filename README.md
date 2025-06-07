@@ -1,5 +1,5 @@
 
-# 🚀 V0-Clone | Deployment Platform Inspired by Vercel
+# 🚀 VercelZero | Deployment Platform Inspired by Vercel
 
 <div align="center">
 
