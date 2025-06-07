@@ -20,12 +20,7 @@ jobs:
           cache: 'npm'
       
       # Temporarily commented until secrets are configured
-      - name: Check for Vercel secrets
-        run: |
-          echo "This is a placeholder step until Vercel secrets are configured."
-          echo "Once VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID secrets are added,"
-          echo "uncomment the deployment step in this workflow file."
-      
+            
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
