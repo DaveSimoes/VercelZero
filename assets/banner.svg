@@ -17,20 +17,11 @@
     </filter>
   </defs>
   <rect width="1200" height="400" rx="40" fill="url(#bg-gradient)" />
-  
-  <!-- Ícone minimalista (cérebro estilizado para IA) -->
-  <g>
-    <ellipse cx="280" cy="200" rx="60" ry="60" fill="#1a1a2e" stroke="url(#text-gradient)" stroke-width="6"/>
-    <path d="M280 140 Q300 170 280 200 Q260 230 280 260" stroke="#6C47FF" stroke-width="4" fill="none"/>
-    <path d="M280 140 Q260 170 280 200 Q300 230 280 260" stroke="#00CFFF" stroke-width="4" fill="none"/>
-    <circle cx="280" cy="200" r="10" fill="#FFFFFF" opacity="0.9"/>
-  </g>
-  
+  <!-- Sutil linha geométrica -->
+  <polyline points="80,320 1120,80" stroke="#6C47FF" stroke-width="2" stroke-opacity="0.13"/>
+  <polyline points="200,380 1000,60" stroke="#00CFFF" stroke-width="2" stroke-opacity="0.09"/>
   <!-- Nome do Projeto -->
-  <text x="400" y="210" fill="url(#text-gradient)" font-size="92" font-family="Montserrat, Arial, sans-serif" font-weight="bold" filter="url(#glow)" letter-spacing="3">VercelZero</text>
-  
+  <text x="50%" y="48%" text-anchor="middle" fill="url(#text-gradient)" font-size="88" font-family="Montserrat, Arial, sans-serif" font-weight="bold" filter="url(#glow)" letter-spacing="3">VercelZero</text>
   <!-- Slogan -->
-  <text x="400" y="270" fill="#FFFFFF" font-size="34" font-family="Montserrat, Arial, sans-serif" font-weight="500" opacity="0.90">
-    A modern recreation of Vercel’s original V0 platform
-  </text>
+  <text x="50%" y="65%" text-anchor="middle" fill="#FFFFFF" font-size="32" font-family="Montserrat, Arial, sans-serif" font-weight="500" opacity="0.90">A modern recreation of Vercel’s original V0 platform</text>
 </svg>
