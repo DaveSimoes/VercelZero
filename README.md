@@ -46,7 +46,7 @@ Vercel revolutionized how we deploy frontend applications with their original V0
 
 </div>
 
-## 🚀 [Features](#-features)
+## 🚀 Features
 
 ### Core
 - 🔄 **Automated Build Systems** - Automatic framework detection and optimized configuration
