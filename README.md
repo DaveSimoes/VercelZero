@@ -12,7 +12,7 @@
 
 **A modern recreation of Vercel's original V0 platform, built with Next.js, TypeScript, and integrated with OpenAI GPT-4**
 
-[Demo](https://v0-clone-demo.vercel.app) • [Documentation](#documentation) • [Features](#features) • [Installation](#installation) • [Roadmap](#roadmap)
+[Demo](https://v0-clone-demo.vercel.app) • [Documentation](#-documentation) • [Features](#-features) • [Installation](#-installation) • [Roadmap](#-roadmap)
 
 </div>
 
@@ -46,7 +46,7 @@ Vercel revolutionized how we deploy frontend applications with their original V0
 
 </div>
 
-## 🚀 Features
+## 🚀 [Features](#-features)
 
 ### Core
 - 🔄 **Automated Build Systems** - Automatic framework detection and optimized configuration
