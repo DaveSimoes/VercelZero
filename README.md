@@ -3,6 +3,10 @@
 
 <div align="center">
 
+<p align="center">
+  <img src="assets/banner.svg" alt="VercelZero Banner" />
+</p>
+
 ![V0-Clone Banner](https://via.placeholder.com/1200x300/4F46E5/FFFFFF?text=V0-Clone+Platform)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
