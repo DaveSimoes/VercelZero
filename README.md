@@ -120,7 +120,7 @@ Complete documentation is available in the following resources:
 - [API Reference](docs/api-reference.md)
 - [Advanced Configuration](docs/advanced-config.md)
 
-## 🛣️  Roadmap
+## 🛣️ Roadmap
 
 - [ ] **Q3 2025**: Support for multiple cloud providers (AWS, GCP, Azure)
 - [ ] **Q4 2025**: Advanced monitoring system with performance analysis
