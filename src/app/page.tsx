@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Header from "@/components/ui/header";
-import Sidebar from "@/components/ui/sidebar";
+import Header from "@/components/header";
+import Sidebar from "@/components/sidebar";
 // Import other components you create for ProjectList, Hero, etc.
 
 export default function Home() {
