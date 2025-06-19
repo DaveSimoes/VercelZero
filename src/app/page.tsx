@@ -1,110 +1,66 @@
 "use client";
 import { useState } from "react";
-import {
-  CopilotTask,
-  
-  useCopilotContext,
-  useMakeCopilotReadable,
-} from "@copilotkit/react-core";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
-import PreviewScreen from "@/components/preview-screen";
-import { Input } from "@/components/ui/input";
+// Importe outros componentes que criar para ProjectList, Hero, etc.
 
 export default function Home() {
-  const [code, setCode] = useState<string[]>([
-    `<h1 class="text-red-500">Hello World</h1>`,
-  ]);
-  const [codeToDisplay, setCodeToDisplay] = useState<string>(code[0] || "");
-  const [showDialog, setShowDialog] = useState<boolean>(false);
-  const [codeCommand, setCodeCommand] = useState<string>("");
+  const [authenticated, setAuthenticated] = useState(false); // Simulação, depois trocar por auth real
 
-  const readableCode = useMakeCopilotReadable(codeToDisplay);
-
-  const generateCode = new CopilotTask({
-    instructions: codeCommand,
-    actions: [
-      {
-        name: "generateCode",
-        description: "Create Code Snippet with React.js, tailwindcss.",
-        parameters: [
-          {
-            name: "code",
-            type: "string",
-            description: "Code to be generated",
-            required: true,
-          },
-        ],
-        handler: async ({ code }) => {
-          setCode((prev) => [...prev, code]);
-          setCodeToDisplay(code);
-        },
-      },
-    ],
-  });
-
-  const context = useCopilotContext();
-  
   return (
-    <>
-      <main className="bg-white min-h-screen px-4">
-        <Header openCode={() => setShowDialog(true)} />
-        <div className="w-full h-full min-h-[70vh] flex justify-between gap-x-1 ">
-          <Sidebar>
-            <div className="space-y-2">
-              {code.map((c, i) => (
-                <div
-                  key={i}
-                  className="w-full h-20 p-1 rounded-md bg-white border border-blue-600"
-                  onClick={() => setCodeToDisplay(c)}
+    <main className="bg-neutral-950 min-h-screen flex flex-col">
+      <Header />
+      <div className="flex flex-1">
+        <Sidebar />
+        <section className="flex-1 px-6 py-8">
+          {!authenticated ? (
+            // Hero Section para visitantes
+            <div className="flex flex-col items-center justify-center h-full text-center">
+              <h1 className="text-5xl font-bold text-white mb-4">Deploy. Preview. Ship.</h1>
+              <p className="text-lg text-neutral-300 mb-8">
+                Acelere seu desenvolvimento com o VercelZero – simples, rápido e poderoso.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+                  Comece com GitHub
+                </button>
+                <a
+                  href="https://github.com/DaveSimoes/VercelZero"
+                  className="text-white border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
                 >
-                  v{i}
+                  Veja a documentação
+                </a>
+              </div>
+            </div>
+          ) : (
+            // Dashboard para usuários autenticados
+            <div>
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-2xl font-bold text-white">Seus Projetos</h2>
+                <button className="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
+                  Novo Projeto
+                </button>
+              </div>
+              {/* project´s list exemple */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Mapping user projects here*/}
+                {/* <ProjectCard ... /> */}
+                <div className="bg-neutral-900 p-6 rounded-xl shadow hover:shadow-lg border border-neutral-800 transition">
+                  <h3 className="text-white font-semibold mb-2">meu-projeto</h3>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs text-green-400 bg-green-950 px-2 py-1 rounded-full">Deploy: Sucesso</span>
+                    <span className="text-xs text-neutral-400">Atualizado há 2 min</span>
+                  </div>
+                  <a href="#" className="text-primary hover:underline text-sm">Acessar Preview</a>
                 </div>
-              ))}
+              </div>
             </div>
-          </Sidebar>
-
-          <div className="w-10/12">
-            <PreviewScreen html_code={codeToDisplay || ""} />
-          </div>
-        </div>
-        <div className="w-8/12 mx-auto p-1 rounded-full bg-primary flex my-4 outline-0">
-          <Input
-            type="text"
-            placeholder="Enter your code command"
-            className="w-10/12 p-6 rounded-l-full  outline-0 bg-primary text-white"
-            value={codeCommand}
-            onChange={(e) => setCodeCommand(e.target.value)}
-          />
-          <button
-            className="w-2/12 bg-white text-primary rounded-r-full"
-            onClick={() => generateCode.run(context)}
-          >
-            Generate
-          </button>
-        </div>
-      </main>
-      <Dialog open={showDialog} onOpenChange={setShowDialog}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>View Code.</DialogTitle>
-            <DialogDescription>
-              You can use the following code to start integrating into your
-              application.
-            </DialogDescription>
-            <div className="p-4 rounded bg-primary text-white my-2">
-              {readableCode}
-            </div>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
-    </>
+          )}
+        </section>
+      </div>
+      <footer className="text-neutral-500 text-xs text-center py-4">
+        VercelZero — open source clone. Criado por DaveSimoes.
+      </footer>
+    </main>
   );
 }
