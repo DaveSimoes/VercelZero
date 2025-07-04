@@ -2,8 +2,9 @@
 import { useState } from "react";
 import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
-import Preview from "@/components/preview-screen"; // Add this import or adjust it to the correct path
+import PreviewScreen from "@/components/preview"; // Add this import or adjust it to the correct path
 
+const html_code = "<p>Preview example!</p>";
 export default function Home() {
   const [authenticated, setAuthenticated] = useState(false); // Simulation, then switch to real auth
 
@@ -38,7 +39,7 @@ export default function Home() {
             // Dashboard for authenticated users
             <div>
               <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl font-bold text-white">Seus Projetos</h2>
+                <h2 className="text-2xl font-bold text-white">Your projects</h2>
                 <button className="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
                   Novo Projeto
                 </button>
@@ -58,7 +59,7 @@ export default function Home() {
                     </span>
                   </div>
                   <a href="#" className="text-primary hover:underline text-sm">
-                    Access <Preview />
+                    Access <PreviewScreen html_code={html_code} />
                   </a>
                 </div>
               </div>
