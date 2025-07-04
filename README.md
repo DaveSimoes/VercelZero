@@ -23,7 +23,7 @@
 
 </div>
 
-## ✨ Demonstration
+## ✨ Screenshots
 
 <div align="center">
  
