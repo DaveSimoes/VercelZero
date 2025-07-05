@@ -4,10 +4,9 @@ import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
 import PreviewScreen from "@/components/preview"; // Add this import or adjust it to the correct path
 
-const html_code = "<p>Preview example!</p>";
 export default function Home() {
   const [authenticated, setAuthenticated] = useState(false); // Simulation, then switch to real auth
-
+   const html_code = "<p>Preview example!</p>";
   return (
     <main className="bg-neutral-950 min-h-screen flex flex-col">
       <Header />
