@@ -2,11 +2,15 @@
 import { useState } from "react";
 import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
-import PreviewScreen from "@/components/preview"; // Add this import or adjust it to the correct path
+import PreviewScreen from "@/components/preview";
+
+interface ProjectCardProps {
+  html_code: string;
+}
 
 export default function Home() {
-  const [authenticated, setAuthenticated] = useState(false); // Simulation, then switch to real auth
-   const html_code = "<p>Preview example!</p>";
+  const [authenticated, setAuthenticated] = useState<boolean>(false);
+  const html_code: string = "<p>Preview example!</p>";
   return (
     <main className="bg-neutral-950 min-h-screen flex flex-col">
       <Header />
