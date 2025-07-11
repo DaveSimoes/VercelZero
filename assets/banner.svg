@@ -1,0 +1,27 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000"/>
+      <stop offset="1" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C47FF"/>
+      <stop offset="1" stop-color="#00CFFF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" rx="40" fill="url(#bg-gradient)" />
+  <!-- Sutil linha geométrica -->
+  <polyline points="80,320 1120,80" stroke="#6C47FF" stroke-width="2" stroke-opacity="0.13"/>
+  <polyline points="200,380 1000,60" stroke="#00CFFF" stroke-width="2" stroke-opacity="0.09"/>
+  <!-- Nome do Projeto -->
+  <text x="50%" y="48%" text-anchor="middle" fill="url(#text-gradient)" font-size="88" font-family="Montserrat, Arial, sans-serif" font-weight="bold" filter="url(#glow)" letter-spacing="3">VercelZero</text>
+  <!-- Slogan -->
+  <text x="50%" y="65%" text-anchor="middle" fill="#FFFFFF" font-size="32" font-family="Montserrat, Arial, sans-serif" font-weight="500" opacity="0.90">A modern recreation of Vercel’s original V0 platform</text>
+</svg>

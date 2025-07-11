@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      # Placeholder for future test implementation
+      - name: Check for test directory
+        run: |
+          if [ -d "__tests__" ] || [ -d "tests" ] || [ -d "src/__tests__" ]; then
+            echo "Tests directory found. Ready to run tests when implemented."
+          else
+            echo "No tests directory found. This job will pass, but consider adding tests in the future."
+            echo "See https://nextjs.org/docs/testing for Next.js testing documentation."
+          fi
