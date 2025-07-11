@@ -13,7 +13,7 @@ export default function Home() {
   const html_code: string = "<p>Preview example!</p>";
   return (
     <main className="bg-neutral-950 min-h-screen flex flex-col">
-     <Header openCode={() => {}} />
+    <Header openCode={() => {}} />
       <div className="flex flex-1">
        <Sidebar>{null}</Sidebar>
         <section className="flex-1 px-6 py-8">
