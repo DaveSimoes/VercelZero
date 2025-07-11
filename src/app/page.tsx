@@ -15,7 +15,7 @@ export default function Home() {
     <main className="bg-neutral-950 min-h-screen flex flex-col">
      <Header openCode={() => {}} />
       <div className="flex flex-1">
-        <Sidebar></Sidebar>
+       <Sidebar>{null}</Sidebar>
         <section className="flex-1 px-6 py-8">
           {!authenticated ? (
             // Hero section for visitors
