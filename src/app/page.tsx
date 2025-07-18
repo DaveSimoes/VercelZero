@@ -13,13 +13,13 @@ export default function Home() {
   const html_code: string = "<p>Preview example!</p>";
   return (
     <main className="bg-neutral-950 min-h-screen flex flex-col">
-    <Header openCode={() => {}} />
-      <div className="flex flex-1">
-       <Sidebar>{null}</Sidebar>
-        <section className="flex-1 px-6 py-8">
+      <Header openCode={() => {}} />
+      <div className="flex flex-1 min-h-0">
+        <Sidebar>{null}</Sidebar>
+        <section className="flex-1 flex flex-col">
           {!authenticated ? (
             // Hero section for visitors
-            <div className="flex flex-col items-center justify-center h-full text-center">
+            <div className="flex flex-1 flex-col items-center justify-center min-h-0 text-center">
               <h1 className="text-5xl font-bold text-white mb-4">
                 Build. Preview. Launch
               </h1>
@@ -33,7 +33,8 @@ export default function Home() {
                 </button>
                 <a
                   href="https://github.com/DaveSimoes/VercelZero"
-                  className="text-white border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+                  className="text-white border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
+                >
                   See the documentation
                 </a>
               </div>
@@ -44,7 +45,7 @@ export default function Home() {
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-2xl font-bold text-white">Your projects</h2>
                 <button className="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
-                  Novo Projeto
+                  New Project
                 </button>
               </div>
               {/* Project´s list example */}
