@@ -48,8 +48,6 @@ function Header() {
 }
 
 export default function Home() {
-  // Demo: está deslogado, mostra hero.
-  // Se quiser simular logado, troque para true.
   const [authenticated] = useState<boolean>(false);
 
   return (
@@ -79,7 +77,7 @@ export default function Home() {
               </div>
             </>
           ) : (
-            // Dashboard para usuários autenticados (adicione aqui)
+            // Add dashboard for authenticated user if you want
             <div></div>
           )}
         </section>
