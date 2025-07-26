@@ -144,7 +144,7 @@ Complete documentation is available in the following resources:
 Try it now: [vercel-zero-oa22.vercel.app](https://vercel-zero-oa22.vercel.app/)
 
 **How to use:**  
-Visit the link above to experience all features of the VercelZero project without any local installation.
+Visit the link above to experience all features of the VercelZero project (under construction) without any local installation.
 
 ## 👥 Contributing
 
