@@ -1,78 +1,89 @@
 "use client";
 import { useState } from "react";
-import Header from "@/components/header";
-import Sidebar from "@/components/sidebar";
-import PreviewScreen from "@/components/preview";
 
-interface ProjectCardProps {
-  html_code: string;
+function Sidebar() {
+  return (
+    <aside className="w-60 bg-neutral-950 border-r border-neutral-800 min-h-screen pt-8 px-4 fixed top-0 left-0 flex flex-col">
+      <nav className="flex flex-col gap-1 mt-4">
+        <a className="px-4 py-2 rounded-md bg-neutral-900 text-white font-semibold" href="#">
+          Dashboard
+        </a>
+        <a className="px-4 py-2 rounded-md text-neutral-400 hover:bg-neutral-800 hover:text-white transition" href="#">
+          Projects
+        </a>
+        <a className="px-4 py-2 rounded-md text-neutral-400 hover:bg-neutral-800 hover:text-white transition" href="#">
+          Domains
+        </a>
+        <a className="px-4 py-2 rounded-md text-neutral-400 hover:bg-neutral-800 hover:text-white transition" href="#">
+          Settings
+        </a>
+      </nav>
+    </aside>
+  );
+}
+
+function Header() {
+  return (
+    <header className="h-16 px-8 flex items-center justify-between bg-neutral-950 border-b border-neutral-800 ml-60 fixed top-0 right-0 left-60 z-10">
+      <div className="flex items-center gap-2">
+        <span className="text-2xl text-white font-bold flex items-center gap-2">
+          <span className="mr-2">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <polygon points="16,4 28,28 4,28" fill="white" />
+            </svg>
+          </span>
+          VercelZero
+        </span>
+      </div>
+      <div className="flex items-center gap-4">
+        <button className="px-5 py-1 rounded-full border border-neutral-700 text-white hover:bg-neutral-800 transition">
+          Sign In
+        </button>
+        <span className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-white font-bold">
+          U
+        </span>
+      </div>
+    </header>
+  );
 }
 
 export default function Home() {
-  const [authenticated, setAuthenticated] = useState<boolean>(false);
-  const html_code: string = "<p>Preview example!</p>";
+  // Demo: está deslogado, mostra hero.
+  // Se quiser simular logado, troque para true.
+  const [authenticated] = useState<boolean>(false);
+
   return (
-    <main className="bg-neutral-950 min-h-screen flex flex-col">
-    <Header openCode={() => {}} />
-      <div className="flex flex-1">
-       <Sidebar>{null}</Sidebar>
-        <section className="flex-1 px-6 py-8">
+    <main className="bg-neutral-950 min-h-screen">
+      <Sidebar />
+      <Header />
+      <div className="ml-60 pt-16 flex flex-col min-h-screen">
+        <section className="flex flex-1 flex-col items-center justify-center text-center">
           {!authenticated ? (
-            // Hero section for visitors
-            <div className="flex flex-col items-center justify-center h-full text-center">
+            <>
               <h1 className="text-5xl font-bold text-white mb-4">
                 Build. Preview. Launch
               </h1>
               <p className="text-lg text-neutral-300 mb-8">
-                Speed up your development with VercelZero - simple, fast and
-                powerful.
+                Speed up your development with VercelZero - simple, fast and powerful.
               </p>
               <div className="flex gap-4 justify-center">
-                <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+                <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
                   Get started with GitHub
                 </button>
                 <a
                   href="https://github.com/DaveSimoes/VercelZero"
-                  className="text-white border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+                  className="text-white border border-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition"
+                >
                   See the documentation
                 </a>
               </div>
-            </div>
+            </>
           ) : (
-            // Dashboard for authenticated users
-            <div>
-              <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl font-bold text-white">Your projects</h2>
-                <button className="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
-                  Novo Projeto
-                </button>
-              </div>
-              {/* Project´s list example */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Map user projects here */}
-                {/* <ProjectCard ... /> */}
-                <div className="bg-neutral-900 p-6 rounded-xl shadow hover:shadow-lg border border-neutral-800 transition">
-                  <h3 className="text-white font-semibold mb-2">meu-projeto</h3>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs text-green-400 bg-green-950 px-2 py-1 rounded-full">
-                      Deploy: Success
-                    </span>
-                    <span className="text-xs text-neutral-400">
-                      Updated 2 min ago
-                    </span>
-                  </div>
-                  <a href="#" className="text-primary hover:underline text-sm">
-                    Access <PreviewScreen html_code={html_code} />
-                  </a>
-                </div>
-              </div>
-            </div>
+            // Dashboard para usuários autenticados (adicione aqui)
+            <div></div>
           )}
         </section>
       </div>
-      <footer className="text-neutral-500 text-xs text-center py-4">
-        VercelZero — open source clone. created by DaveSimoes.
-      </footer>
     </main>
   );
 }
