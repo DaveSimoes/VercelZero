@@ -83,8 +83,8 @@ Vercel revolutionized how we deploy frontend applications with their original V0
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/DaveSimoes/V0-Clone_Copilotkit-Next.js-OpenAI-GPT4.git
-   cd V0-Clone_Copilotkit-Next.js-OpenAI-GPT4
+   git clone https://github.com/DaveSimoes/VercelZero.git
+   cd vercel-zero
 
 2. **Install dependencies**
 ```
