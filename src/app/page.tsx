@@ -24,7 +24,7 @@ function Sidebar() {
 
 function Header() {
   return (
-    <header className="h-16 px-8 flex items-center justify-between bg-neutral-950 border-b border-neutral-800 ml-60 fixed top-0 right-0 left-60 z-10">
+    <header className="h-16 px-8 flex items-center justify-between bg-neutral-950 border-b border-neutral-800 ml-60 fixed top-0 right-0 left-0 z-10">
       <div className="flex items-center gap-2">
         <span className="text-2xl text-white font-bold flex items-center gap-2">
           <span className="mr-2">
