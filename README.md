@@ -16,7 +16,7 @@
 
 **A modern recreation of Vercel's original V0 platform, built with Next.js, TypeScript, and integrated with OpenAI GPT-4**
 
-[Demo](#-live-demo) • [Documentation](#-documentation) • [Features](#-features) • [Installation](#-installation) • [Roadmap](#%EF%B8%8F-roadmap)
+[Live Demo](#-live-demo) • [Documentation](#-documentation) • [Features](#-features) • [Installation](#-installation) • [Roadmap](#%EF%B8%8F-roadmap)
 
 
 
