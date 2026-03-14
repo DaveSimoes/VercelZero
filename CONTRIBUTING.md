@@ -1,8 +1,8 @@
-# Contributing to V0-Clone
+# Contributing to VercelZero
 
 First off, thank you for taking the time to contribute! 🎉👍
 
-The following are guidelines for contributing to V0-Clone, which is a modern recreation of Vercel's V0 platform. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following are guidelines for contributing to VercelZero, an open-source deployment platform inspired by Vercel's early V0 experience. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Code of Conduct
 
@@ -24,7 +24,7 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 
 #### How Do I Submit A Good Bug Report?
 
-Bugs are tracked as [GitHub issues](https://github.com/DaveSimoes/V0-Clone_Copilotkit-Next.js-OpenAI-GPT4/issues). Create an issue and provide the following information:
+Bugs are tracked as [GitHub issues](https://github.com/DaveSimoes/VercelZero/issues). Create an issue and provide the following information:
 
 * **Use a clear and descriptive title** for the issue to identify the problem.
 * **Describe the exact steps to reproduce the problem** in as many details as possible.
@@ -43,9 +43,9 @@ This section guides you through submitting an enhancement suggestion, including 
 * **Check if the enhancement already exists** by searching through open and closed issues.
 * **Verify if your idea fits with the scope and aims of the project** by reviewing the README and documentation.
 
-#### How Do I Submit A Good Enhancement Suggestion?
+  #### How Do I Submit A Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/DaveSimoes/V0-Clone_Copilotkit-Next.js-OpenAI-GPT4/issues). Create an issue and provide the following information:
+  Enhancement suggestions are tracked as [GitHub issues](https://github.com/DaveSimoes/VercelZero/issues). Create an issue and provide the following information:
 
 * **Use a clear and descriptive title** for the issue.
 * **Provide a step-by-step description of the suggested enhancement** in as much detail as possible.
@@ -61,7 +61,7 @@ Unsure where to begin? You can start by looking through these issues:
 * `help-wanted` - issues which need assistance.
 * `good-first-issue` - good issues for first-time contributors.
 
-### Pull Requests
+  ### Pull Requests
 
 * Fill in the required template.
 * Do not include issue numbers in the PR title.
