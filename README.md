@@ -112,7 +112,7 @@ Create a .env.local file in the project root.
 Variable	Description	Required
 OPENAI_API_KEY	API key used by OpenAI-powered features	Yes
 Add any extra environment variables required by your deployment/auth setup.
-
+ ---
 🧪 Scripts
 ```
 npm run dev        # start development server
