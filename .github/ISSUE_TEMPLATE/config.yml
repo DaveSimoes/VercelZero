@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and general discussion
+    url: https://github.com/DaveSimoes/VercelZero/discussions
+    about: Please use GitHub Discussions for Q&A and broader conversations.
