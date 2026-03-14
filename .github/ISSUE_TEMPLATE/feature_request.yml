@@ -1,0 +1,48 @@
+name: Feature Request
+description: Suggest an idea to improve VercelZero.
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your idea 🚀
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+      placeholder: "As a user, I struggle with..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature and how it should work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative approaches you evaluated?
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: How does this improve user/developer experience?
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checklist
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: This proposal aligns with the project goals.
+          required: true
