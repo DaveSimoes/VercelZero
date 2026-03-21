@@ -13,7 +13,7 @@
   <p>
     <a href="https://vercel-zero-01.vercel.app/"><strong>Live Demo</strong></a>
     ·
-    <a href="#english"><strong>English</strong></a>
+     <a href="#english"><strong>English</strong></a>
     ·
     <a href="#pt-br"><strong>PT-BR</strong></a>
     ·
@@ -25,7 +25,7 @@
   </p>
 
   <p>
-    [**Launch Kit**](docs/launch-kit.md)
+     <a href="docs/launch-kit.md"><strong>Launch Kit Pitch</strong></a>
     ·
     <a href="docs/recruiter-pitch.md"><strong>Recruiter Pitch</strong></a>
     ·
