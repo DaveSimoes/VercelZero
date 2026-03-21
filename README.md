@@ -220,6 +220,7 @@ VercelZero is intended to answer that question with a visible **yes**.
 ### Architecture
 
 ```mermaid
+
 flowchart LR
     A[User] --> B[Dashboard Experience]
     B --> C[Deployment Interaction]
