@@ -25,7 +25,7 @@
   </p>
 
   <p>
-    <a href="docs/launch-kit.md"><strong>Launch Kit</strong></a>
+    [**Launch Kit**](docs/launch-kit.md)
     ·
     <a href="docs/recruiter-pitch.md"><strong>Recruiter Pitch</strong></a>
     ·
