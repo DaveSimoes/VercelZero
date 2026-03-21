@@ -25,7 +25,7 @@
   </p>
 
   <p>
-    <a href="docs/vercelzero-launch-kit.md"><strong>Launch Kit</strong></a>
+    <a href="docs/launch-kit.md"><strong>Launch Kit</strong></a>
     ·
     <a href="docs/recruiter-pitch.md"><strong>Recruiter Pitch</strong></a>
     ·
@@ -110,7 +110,7 @@ It is meant to show how a modern SaaS interface can be:
 
 ---
 
-# VercelZero Launch Kit
+# Launch Kit
 
 Use this file as the public distribution pack for promoting VercelZero across GitHub, LinkedIn, X, portfolio pages, and recruiter conversations.
 
