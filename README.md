@@ -186,13 +186,6 @@ VercelZero is an open-source product experience inspired by the early Vercel fee
 - Recruiter/profile views after launch week.
 - Inbound issues or contributor interest.
 
-### What makes this project strong publicly
-
-- It is easy to understand in seconds.
-- It has a familiar, aspirational product category.
-- It supports visuals, demos, and case-study storytelling.
-- It signals both UI taste and engineering intent.
-- It can evolve into a strong open-source system rather than stay a static mockup.
 
 ---
 
