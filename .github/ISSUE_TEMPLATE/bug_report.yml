@@ -1,21 +1,28 @@
 name: Bug Report
-description: Report a reproducible problem to help us improve VercelZero.
+description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "needs-triage"]
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a bug 🙌
-
-        Please fill out the fields below so maintainers can reproduce the issue quickly.
+        Thanks for taking the time to fill out this bug report!
 
   - type: input
-    id: environment
+    id: contact
     attributes:
-      label: Environment
-      description: OS, browser and Node.js version
-      placeholder: "macOS 14, Chrome 123, Node 20"
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
     validations:
       required: true
 
@@ -23,51 +30,16 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Exact steps so we can reproduce the bug.
-      placeholder: |
-        1. Go to...
-        2. Click on...
-        3. See error...
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behavior
-      description: What should have happened?
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual behavior
-      description: What happened instead?
+      description: How do you trigger this bug?
+      placeholder: Step 1...
     validations:
       required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: Relevant logs / screenshots
-      description: Add logs, screenshots or videos if available.
+      label: Relevant log output
+      description: Please copy and paste any relevant log output.
       render: shell
-
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: Pre-submission checklist
-      options:
-        - label: I searched existing issues and did not find a duplicate.
-          required: true
-        - label: I can reproduce this issue on the latest version.
-          required: true
-.github/ISSUE_TEMPLATE/config.yml
-.github/ISSUE_TEMPLATE/config.yml
-Novo
-+5
--0
-
-blank_issues_enabled: false
-contact_links:
+    validations:
+      required: false
